@@ -6,7 +6,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(name = "dynamic-receiver", url = "http://localhost:8083/response")
+@FeignClient(name = "dynamic-receiver", url = "${feign.client.config.dynamic-receiver.url:http://localhost:8083/response}")
 public interface PassthroughClient {
 
     // Accepts ANY object as input, returns generic JsonNode from receiver
