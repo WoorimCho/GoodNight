@@ -9,8 +9,8 @@ services:
       - SPRING_PROFILES_ACTIVE=docker
     networks:
       - goodnight-network
-    depends_on:
-      - postgres
+#    depends_on:
+#      - postgres
 
 #  postgres:
 #    image: postgres:15-alpine
