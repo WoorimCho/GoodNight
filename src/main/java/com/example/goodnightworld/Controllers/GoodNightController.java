@@ -4,7 +4,7 @@ import com.example.goodnightworld.Services.GoodNight;
 import com.example.goodnightworld.Services.PassthroughClient;
 //import com.example.goodnightworld.Services.SenderService;
 import com.example.goodnightworld.model.Snack;
-//import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +15,7 @@ import tools.jackson.databind.JsonNode;
 
 @RestController
 public class GoodNightController {
-//    @Autowired
+    @Autowired
     GoodNight night;
 //    @Autowired
 //    SenderService senderService;
