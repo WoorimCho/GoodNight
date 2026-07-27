@@ -12,18 +12,18 @@ services:
     depends_on:
       - postgres
 
-  postgres:
-    image: postgres:15-alpine
-    environment:
-      POSTGRES_DB: goodnightdb
-      POSTGRES_PASSWORD: password
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    networks:
-      - goodnight-network
+#  postgres:
+#    image: postgres:15-alpine
+#    environment:
+#      POSTGRES_DB: goodnightdb
+#      POSTGRES_PASSWORD: password
+#    volumes:
+#      - postgres_data:/var/lib/postgresql/data
+#    networks:
+#      - goodnight-network
 
 networks:
   goodnight-network:
 
-volumes:
-  postgres_data:
+#volumes:
+#  postgres_data:

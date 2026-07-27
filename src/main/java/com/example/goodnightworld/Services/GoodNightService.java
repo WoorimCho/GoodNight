@@ -2,7 +2,7 @@ package com.example.goodnightworld.Services;
 
 public interface GoodNightService {
 
-    public abstract void goodNight();
-
+    boolean goodNight();
+    boolean isBedtimeSafe(String snackName);
 }
 

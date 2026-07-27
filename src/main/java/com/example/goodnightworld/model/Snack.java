@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Snack {
     int id;
     String name;
+    boolean bedtimeSafe;
 
     public Snack(){
         id = 0;
@@ -26,6 +27,10 @@ public class Snack {
     public void setName(String name) {
         this.name = name;
     }
+
+    public boolean isBedtimeSafe() { return bedtimeSafe; }
+    public void setBedtimeSafe(boolean bedtimeSafe) { this.bedtimeSafe = bedtimeSafe; }
+
 
     @Override
     public boolean equals(Object obj) {
